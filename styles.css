@@ -1,18 +1,14 @@
-/** {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}*/
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 .header-container {
-  height: 1200px;
+  height: 150px;
   font-size: 18px;
   font-family: sans-serif;
   color: #5D6063;
+  /*border: 1px solid #FF0000;*/
 }
 
 a:link,
@@ -30,12 +26,27 @@ a:hover {
   justify-content: space-between;
 
   width: 100%;
-  padding: 50px;
+  height: 100px;
+  padding: 0px;
   background: #FFFFFF;
+  /*border: 1px solid #9400D3;*/
+}
+
+.name-container {
+  height: 150px;
+  font-size: 66px;
+  font-family: 'Reenie Beanie', cursive;
+}
+
+.name {
+  text-align: center;
+  color: #5D6063;
+  /*font-family: Lucinda Calligraphy, cursive;*/
 }
 
 .menu {
-  margin-top: 15px;
+  margin-top: 30px;
+  margin-right: 150px;
 }
 
 .menu > li {
@@ -50,7 +61,7 @@ a:hover {
 .dropdown:hover  .features-menu {
   display: flex;
   flex-direction: column;
-  background: #B2D6FF;
+  background: #DEE2E3;
   border-radius: 5px;
   padding-top: 60px;
 
@@ -121,22 +132,62 @@ a:hover {
 
 .white-space {
   background-color: #FFFFFF;
-  width: 900px;
-  height: 300px;
+  width: 25px;
+  height: 100px;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  border: 1px solid #000000;
+  justify-content: flex-end;
 }
 
 .footer {
   height: 50px;
   flex: 1;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Reenie Beanie', cursive;
 
 }
 
 .clear {
   clear: both;
+}
+
+.about-me-container {
+  height: 500px;
+  width: 100%;
+  float: left;
+  padding: 20px;
+  /*border: 1px solid #9400D3;*/
+}
+
+.about-me {
+  float: left;
+  width: 50%;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 18px;
+  color: #5D6063;
+  font-family: monospace;
+  /*border: 1px solid #FF0000;*/
+  height: 100%
+  word-wrap: break-word;
+}
+
+h1 {
+  text-align: center;
+}
+
+.about-me-image {
+  float: left;
+  position: relative;
+  padding: 0px;
+}
+
+.AMimage {
+  height: 400px;
+  width: auto;
+  /*border: 1px solid #008080;*/
 }

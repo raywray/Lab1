@@ -1,0 +1,153 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.header-container {
+  height: 150px;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #5D6063;
+  /*border: 1px solid #FF0000;*/
+}
+
+a:link,
+a:visited {
+  color: #5D6063;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  background: #FFFFFF;
+  /*border: 1px solid #9400D3;*/
+}
+
+.menu {
+  margin-top: 30px;
+  margin-right: 150px;
+}
+
+.menu > li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.menu > li:last-of-type {
+  margin-right: 0;
+}
+
+.dropdown:hover  .features-menu {
+  display: flex;
+  flex-direction: column;
+  background: #DEE2E3;
+  border-radius: 5px;
+  padding-top: 60px;
+
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  z-index: 1;
+}
+
+.features-menu li {
+  list-style: none;
+  border-bottom: 1px solid #000000;
+
+  padding: 0 40px 10px 20px;
+  margin: 10px;
+}
+
+.features-menu li:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > span {
+  z-index: 2;
+  position: relative;  /* This is important! */
+  cursor: pointer;
+}
+
+.features-menu {                    /* Add this as a new rule */
+  display: none;
+}
+
+.logo {
+  width: 125px;
+  height: 100px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer {
+  height: 50px;
+  flex: 1;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Reenie Beanie', cursive;
+
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+  /*border: 1px solid #008080;*/
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  /*border: 1px solid #008080;*/
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: auto;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 20px;
+  /*border: 1px solid #FF0000;*/
+}
+
+.white-space {
+  background-color: #FFFFFF;
+  width: 25px;
+  height: 100px;
+}
+
+.text-container {
+  height: 500px;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+.text {
+  width: 100%;
+  font-size: 18px;
+  color: #5D6063;
+  font-family: monospace;
+  height: 100%
+  padding: 100px;
+}
